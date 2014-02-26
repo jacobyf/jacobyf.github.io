@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "关于统计学"
-date:   2014-02-25 00:24:57
+date:   2014-02-26 21:05:57
 categories: learning
 ---
 
