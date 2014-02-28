@@ -1,3 +1,7 @@
+---
+layout:post
+title: "Hadoop单节点配置"
+---
 # Hadoop配置笔记
 
 ## Hadoop单机配置
