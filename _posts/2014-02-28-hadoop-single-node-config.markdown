@@ -1,5 +1,5 @@
 ---
-layout:post
+layout: post
 title: "Hadoop单节点配置"
 date:   2014-02-28 10:20:57
 categories: coding
