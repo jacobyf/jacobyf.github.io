@@ -42,12 +42,10 @@ core文件就行（gdal-110-1500-core.msi）。
 下载完之后解压，里面按几级行政区域分为CHN\_adm0.shp、CHN\_adm1.shp等Shapefile，比如我需要上海市每一个 
 区的轮廓图，那就应该对应的是3级行政机构，对应CHN\_adm3.shp文件。现在我们写一个BAT文件执行命令：
 
------------------------------------------------------------------------------------------------------------------------
-D:
-rem cd resources\\01\_GIS\\json
-ogr2ogr -f GeoJSON -where “NAME\_1=’Shanghai’” shanghai\_adm3.geojson D:\\resources\\01\_GIS\\CHN\_adm\\CHN\_adm3.shp
-pause
------------------------------------------------------------------------------------------------------------------------
+	D:
+	rem cd resources\\01\_GIS\\json
+	ogr2ogr -f GeoJSON -where “NAME\_1=’Shanghai’” shanghai\_adm3.geojson D:\\resources\\01\_GIS\\CHN\_adm\\CHN\_adm3.shp
+	pause
 
 * 其中-f后面跟随的是目标转化的文件格式，这里使用GeoJSON
 * -where是过滤条件，其实Shapefile实质还是用了类SQL的文件存储了一些元数据。这里的-where与SQL中的where作用一致。
