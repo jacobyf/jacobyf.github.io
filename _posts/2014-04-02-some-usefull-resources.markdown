@@ -2,7 +2,7 @@
 layout: post
 title: "一些有用的资源链接"
 date: 2014-04-02 09:23:00
-categories: [coding, resources]
+categories: [coding, res]
 ---
 
 由于互联网的便利性，使得我们能够非常廉价地获取诸多的资源。但有价值的其实也不多，所以，去伪存真，那些能够不会因为时光的流逝而失色的东西就应该好好地记录下来，收藏起来。
