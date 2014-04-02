@@ -14,7 +14,4 @@ categories: [coding, skills]
 
 
 
-
-
-
 [1]: /resources/linux/VIM键盘图.pdf
