@@ -41,4 +41,14 @@ MySQL是没有相关的函数能做到这一点的，但是我们可以使用MyS
     {% endhighlight %}
     
 如何，这个查询感觉比上一个更紧凑一点吧。
+
+    {% highlight ruby %}
+    def show
+      @widget = Widget(params[:id])
+      respond_to do |format|
+        format.html # show.html.erb
+        format.json { render json: @widget }
+      end
+    end
+    {% endhighlight %}
     
