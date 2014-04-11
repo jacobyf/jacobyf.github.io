@@ -3,6 +3,7 @@ layout: post
 title: "MySQL查询的时候选择rowid列"
 date: 2014-04-03 09:44:00
 categories: [database, mysql]
+tags: [SQL, MySQL]
 ---
 
 最近在编码的时候需要将一个数据集的列ID查询出来，对于这样的需求，不同数据库都给出了不同的方案。这里主要以MySQL为例，分享一下在MySQL下面怎么实现。
