@@ -40,6 +40,7 @@ MySQL是没有相关的函数能做到这一点的，但是我们可以使用MyS
     SELECT @rank:=@rank+1 as row_id, name, age FROM table1 INNER JOIN (SELECT @rank:=-1) v;
     {% endhighlight %}
     
+    
 如何，这个查询感觉比上一个更紧凑一点吧。
 
     {% highlight ruby %}
