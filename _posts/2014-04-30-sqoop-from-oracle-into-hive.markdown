@@ -2,7 +2,7 @@
 layout: post
 title: "Sqoop from oracle into hive"
 date: 2014-04-30 14:32:00
-categories: [Hadoop, Hive]
+categories: [hadoop, hive]
 tags: [Oracle, Hive, Sqoop]
 ---
 
