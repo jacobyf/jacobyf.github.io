@@ -6,7 +6,7 @@ categories: [hadoop, hive]
 tags: [Oracle, Hive, Sqoop]
 ---
 
-> Recently, I have a good chance to use a data import tool what is called 'Sqoop' to export massive data from a Oracle database server.
+Recently, I have a good chance to use a data import tool what is called 'Sqoop' to export massive data from a Oracle database server.
 At the same time, these data have to be imported into a Hive database inhabit in Hadoop. Before transferring data, I have to make some
 preparation to use my tools. Let me introduce in details below.
 
