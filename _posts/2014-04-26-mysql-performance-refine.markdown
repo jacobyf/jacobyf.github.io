@@ -51,13 +51,13 @@ MySQL支持多个引擎，常用的有`MyISAM`，`Innodb`，`CSV`，`ARCHIVE`等
 * `key_buffer_size`，在创建索引的时候，也可以将这个选项调大一点，这个能够让更多索引创建过程在内存里进行，而不需要频繁访问磁盘。
 
 以上几个选项，都可以在`my.ini`（Linux下是在`my.cnf`）里做配置，当然这里会对全局有影响，如果你只是让作用只局限在创建索引的过程中，你可以在SQL语句中将这些变量设置加入SESSION作用域中。
-	
-	SET SESSION myisam_max_sort_file_size = 5 * 1024 * 1024  * 1024; # 5G
-	SET SESSION myisam_repair_threads = 1;
-	SET SESSION read_buffer_size = 256 * 1024 * 1024; # 256M
-	SET SESSION key_buffer_size = 128 * 1024 * 1024; # 128M
-	ALTER TABLE table_name ADD INDEX index_name (col_name, ... col_name);
-		
+    
+    SET SESSION myisam_max_sort_file_size = 5 * 1024 * 1024  * 1024; # 5G
+    SET SESSION myisam_repair_threads = 1;
+    SET SESSION read_buffer_size = 256 * 1024 * 1024; # 256M
+    SET SESSION key_buffer_size = 128 * 1024 * 1024; # 128M
+    ALTER TABLE table_name ADD INDEX index_name (col_name, ... col_name);
+        
 ### 数据查询优化策略
 在做数据查询的时候，建议按部就班地按下面几个步骤进行，盲目地去执行一条看似优美的SQL语句不可取，代码之美首先要可用性、可靠性。
 
@@ -84,22 +84,22 @@ MySQL支持多个引擎，常用的有`MyISAM`，`Innodb`，`CSV`，`ARCHIVE`等
 
 * 查询当前MySQL当前运行的SQL任务，使用`mysqladmin`查询`processlist`或直接使用`show processlist`。
 
-		mysqladmin -uroot -p123 processlist; # 这种方式会展示出当前的SQL任务列表
-		
-		while :;do mysqladmin -uroot -p123 processlist 2>/dev/null && sleep 5 && clear; done; # 这样可以每隔5秒刷新一次任务状态列表 
+        mysqladmin -uroot -p123 processlist; # 这种方式会展示出当前的SQL任务列表
+        
+        while :;do mysqladmin -uroot -p123 processlist 2>/dev/null && sleep 5 && clear; done; # 这样可以每隔5秒刷新一次任务状态列表 
 * 在做数据插入的过程中，查询当前表插入的行数（对于Innodb可以实时获取结果，MyISAM插入过程中如果锁定全表，则只能等最后获取到结果）。
 
-		mysql -uroot -p123 -e "select table_rows from information_schema.tables where table_name = 'TABLE_NAME'";
+        mysql -uroot -p123 -e "select table_rows from information_schema.tables where table_name = 'TABLE_NAME'";
 * 查询MySQL配置变量默认值，（前面也用到过的`show variables like`）
-		
-		show variables like '%buffer_size%';
+        
+        show variables like '%buffer_size%';
 * 查询MySQL的执行计划
 
-		explain SQL_STATEMENT;
+        explain SQL_STATEMENT;
 * 查询表包括的索引信息
 
-		show index from TABLE;
-		
+        show index from TABLE;
+        
 
 [0-1]: https://dev.mysql.com/doc/refman/5.0/en/myisam-storage-engine.html
 [0-2]: https://dev.mysql.com/doc/refman/5.0/en/innodb-storage-engine.html
@@ -108,18 +108,3 @@ MySQL支持多个引擎，常用的有`MyISAM`，`Innodb`，`CSV`，`ARCHIVE`等
 [1-1]: https://dev.mysql.com/doc/refman/5.0/en/using-explain.html
 [1-2]: https://dev.mysql.com/doc/refman/5.0/en/optimization-indexes.html
 [1-3]: https://dev.mysql.com/doc/refman/5.0/en/buffering-caching.html
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
