@@ -17,6 +17,7 @@ MySQL是没有相关的函数能做到这一点的，但是我们可以使用MyS
 
     {% hightlight shell %}
     SET @rank = -1;
+    {% endhighlight %}
     
     SELECT @rank:=@rank+1 as row_id, name, age FROM table1 limit 5;
     
@@ -33,7 +34,7 @@ MySQL是没有相关的函数能做到这一点的，但是我们可以使用MyS
     ++++++++++++++++++++++++++
     + 5      + Red    +  20  +
     ++++++++++++++++++++++++++
-    {% endhighlight %}
+    
     
 这是一种查询方式，另外还有一个变体，我们可以充分使用`JOIN`进行表连接查询实现。
 
