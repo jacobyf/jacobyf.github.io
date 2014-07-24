@@ -15,9 +15,7 @@ MySQL是没有相关的函数能做到这一点的，但是我们可以使用MyS
 
 好吧，变量准备好了，我们可以准备在查询中使用变量达到我们的目的。其实，我们只需要定义一个变量`@rank`，另外为了使`rowid`是从1开始递增，我们初始变量`@rank`的值为-1，然后在`SELECT`语句中使用到它。
 
-    {% hightlight shell %}
     SET @rank = -1;
-    {% endhighlight %}
     
     SELECT @rank:=@rank+1 as row_id, name, age FROM table1 limit 5;
     
@@ -38,14 +36,11 @@ MySQL是没有相关的函数能做到这一点的，但是我们可以使用MyS
     
 这是一种查询方式，另外还有一个变体，我们可以充分使用`JOIN`进行表连接查询实现。
 
-    {% hightlight shell %}
     SELECT @rank:=@rank+1 as row_id, name, age FROM table1 INNER JOIN (SELECT @rank:=-1) v;
-    {% endhighlight %}
     
     
 如何，这个查询感觉比上一个更紧凑一点吧。
 
-    {% highlight ruby %}
     def show
       @widget = Widget(params[:id])
       respond_to do |format|
@@ -53,5 +48,4 @@ MySQL是没有相关的函数能做到这一点的，但是我们可以使用MyS
         format.json { render json: @widget }
       end
     end
-    {% endhighlight %}
     
