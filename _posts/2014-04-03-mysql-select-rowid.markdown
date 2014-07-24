@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: postd
 title: "MySQL查询的时候选择rowid列"
 date: 2014-04-03 09:44:00
 categories: [database, mysql]
