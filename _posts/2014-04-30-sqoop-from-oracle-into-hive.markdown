@@ -3,7 +3,6 @@ layout: post
 title: "Sqoop from oracle into hive"
 date: 2014-04-30 14:32:00
 categories: [hadoop, hive]
-tags: [Oracle, Hive, Sqoop]
 ---
 
 Recently, I have a good chance to use a data import tool what is called 'Sqoop' to export massive data from a Oracle database server.
