@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AB Test"
-date: 2014-04-03 09:44:00
+date: 2014-07-24 11:35:00
 categories: [read, method]
 tags: [Thought, ABTest]
 ---
