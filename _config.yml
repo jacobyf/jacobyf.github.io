@@ -1,3 +1,2 @@
 name: Jacob Yang's Blog
 pygments: true
-gems: [jekyll-prism-plugin]
