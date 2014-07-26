@@ -8,7 +8,7 @@ safe:  false
 title: Jacobssayings' Blog
 description: My tiny blog, my sayings, my throughts.
 keywords: Jacobssayings' Blog
-url: http://localhost:4000
+url: 
 feed: /atom.xml
 favicon: http://localhost:4000/favicon.ico
 
