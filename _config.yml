@@ -37,7 +37,7 @@ author:
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
 follow:
-  - class: icon-rss
+  - class: fa-rss
     url: /atom.xml
   - class: fa-weibo
     url: http://t.sina.com/jacoby/
