@@ -1,125 +1,84 @@
-inc:
-  # Blog Information
-  title:        "jacobssayings"
-  subtitle:     "My little things, my great things!"
-  cover_image:  blog-cover.jpg
-  logo:         rabbit.JPG
-  
-  # Company information
-  company:      Huawei
-  url:          http://jacobyf.net
-  facebook:     sendtoinc
-  twitter:      sendtoinc
-  gplus:        '101183822199340201470'
-  about_link:   http://www.huawei.com
-  
-  # Product Information
-  product_link: http://incorporated.sendtoinc.com/
-  tagline:      "Get a modern blog for your company"
-  
-  # Comments
-  disqus:
-    # Eg. "exampleblog" Set to false to disable comments
-    shortname:  false
-  
-  # Sharing settings
-  sharing:
-    twitter:    false
-    facebook:   false
-    gplus:      false
-    hn:         false
-    
-  
- # Analytics     
-  analytics:
-    google: false # Add tracking code in _includes/_google-analytics.html
-      
-      
-  # Google Fonts
-  # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
-  google_font: 'Droid+Sans:400,700'
-  
-  # Setup your fonts, colors etc at _assets/stylesheets/main.scss
+markdown: redcarpet
+pygments: true
+paginate: 8
 
-url:         http://incorporated.sendtoinc.com
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
-include:     ['.htaccess']
-exclude:     []
-timezone:    nil
+safe:  false
 
-# Show future posts
-future:      false
-show_drafts: nil
-limit_posts: 0
-pygments:    true
+#Site config
+title: Jacobssayings' Blog
+description: My tiny blog, my sayings, my throughts.
+keywords: Jacobssayings' Blog
+url: http://localhost:4000
+feed: /atom.xml
+favicon: http://localhost:4000/favicon.ico
 
-relative_permalinks: true
+#Nav config
+nav:
+  - text: 首页
+    url: /index.html
+  - text: 分类目录 
+    url: /categories.html
+  - text: 文章归档
+    url: /archives.html
+  - text: 联系我
+    url: /contact.html
+  - text: 友情链接
+    url: /links.html
 
-permalink:     pretty
-paginate_path: 'page:num'
-paginate: 10
+#Author config
+author:
+    name: jacobyssayings
+    email: jacob.y314@gmail.com
+    imageLink: http://tp2.sinaimg.cn/1832671293/180/40020872447/1
+    simpleIntro: 我是「雅各布的碎碎念」，生于湖湘，求学于羊城，工作于鹏城。
+    detailIntro:
+      <p> 与大多数IT宅男们拥有着同样的梦想，梦想着自己可以改变世界。对，活着就是为了改变世界！</p>
+      <p> 这个个人博客记录自己的一些技术札记、心路历程。个人擅长的编程语言主要是Java, Python, Javascript，由于工作的系统，平常关注智能家居、健康医疗、大数据等行业动态，也会定时写一些相关的心得、体会。</p><p>生活中，我会捧着书本，喝点铁观音，打几把Dota</p>
 
-markdown:      maruku
-markdown_ext:  markdown,mkd,mkdn,md
-textile_ext:   textile
+#Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
+follow:
+  - class: icon-rss
+    url: /atom.xml
+  - class: fa-weibo
+    url: http://t.sina.com/jacoby/
+  - class: fa-qq
+    url: http://user.qzone.qq.com/852343978
+  - class: fa-github-alt
+    url: http://github.com/jacobyf/
+#  - class: icon-twitter
+#    url: http://twitter.com/piznlin
+#  - class: icon-google-plus
+#    url: http://google.com
 
-excerpt_separator: "<!-- more -->"
+#Links
+customLinks:
+  - item:
+    - text: 掌心
+      url: http://www.zhanxin.info
+    - text: Jekyll
+      url: http://jekyllrb.com
+    - text: Jekyll Theme
+      url: http://www.zhanxin.info/themes.html
+    message: Friends
+  - item:
+    - text: Font Awesome
+      url: http://fortawesome.github.io/Font-Awesome/
+    - text: Google Font
+      url: http://www.google.com/fonts/
+    - text: jQuery
+      url: http://jquery.com/
+    message: 其他相关链接
 
-safe:        false
-host:        0.0.0.0
-port:        4000
-baseurl:     /
-lsi:         false
+#googleAnaly, your id link UA-12345678-X
+googleAnaly:
+  config: true
+  id: UA-40169250-1
 
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
+#comment config
+disqus:
+  config: false
+  id: piznblog
 
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: false
-
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
-
-redcloth:
-  hard_breaks: true
-
-#
-# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
-#
-assets:
-
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/images
-  js_compressor: uglifier
-  css_compressor: sass
-  cachebust: none
-  cache: false
-  gzip: [ text/css, application/javascript ]
-  debug: false
+duoshuo:
+  config: true
+  id: zhanxin
