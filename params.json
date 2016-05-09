@@ -1,0 +1,7 @@
+{
+  "name": "Jacobyf.GitHub.io",
+  "tagline": "",
+  "body": "---\r\nlayout: default\r\ntitle: Jacob Yang's Blog\r\n---\r\n\r\n<div id=\"home\">\r\n  <h1>Blog Posts</h1>\r\n  <ul class=\"posts\">\r\n    {% for post in site.posts %}\r\n      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href=\"{{ post.url }}\">{{ post.title }}</a></li>\r\n    {% endfor %}\r\n  </ul>\r\n</div>",
+  "google": "",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

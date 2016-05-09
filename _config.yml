@@ -1,0 +1,84 @@
+markdown: redcarpet
+pygments: true
+paginate: 8
+
+safe:  false
+
+#Site config
+title: Jacobssayings' Blog
+description: My tiny blog, my sayings, my throughts.
+keywords: Jacobssayings' Blog
+url: 
+feed: /atom.xml
+favicon: /favicon.ico
+
+#Nav config
+nav:
+  - text: 首页
+    url: /index.html
+  - text: 分类目录 
+    url: /categories.html
+  - text: 文章归档
+    url: /archives.html
+  - text: 联系我
+    url: /contact.html
+  - text: 友情链接
+    url: /links.html
+
+#Author config
+author:
+    name: jacobyssayings
+    email: jacob.y314@gmail.com
+    imageLink: http://ww3.sinaimg.cn/small/68b2ac15gw1eiq7mco1evj203c037wee.jpg
+    simpleIntro: 我是「雅各布的碎碎念」，生于湖湘，求学于羊城，工作于鹏城。
+    detailIntro:
+      <p> 与大多数IT宅男们拥有着同样的梦想，梦想着自己可以改变世界。对，活着就是为了改变世界！</p>
+      <p> 这个个人博客记录自己的一些技术札记、心路历程。个人擅长的编程语言主要是Java, Python, Javascript，由于工作的系统，平常关注智能家居、健康医疗、大数据等行业动态，也会定时写一些相关的心得、体会。</p><p>生活中，我会捧着书本，喝点铁观音，打几把Dota</p>
+
+#Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
+follow:
+  - class: fa fa-rss
+    url: /atom.xml
+  - class: fa fa-weibo
+    url: http://t.sina.com/jacoby/
+  - class: fa fa-qq
+    url: http://user.qzone.qq.com/852343978
+  - class: fa fa-github-alt
+    url: http://github.com/jacobyf/
+#  - class: icon-twitter
+#    url: http://twitter.com/piznlin
+#  - class: icon-google-plus
+#    url: http://google.com
+
+#Links
+customLinks:
+  - item:
+    - text: 掌心
+      url: http://www.zhanxin.info
+    - text: Jekyll
+      url: http://jekyllrb.com
+    - text: Jekyll Theme
+      url: http://www.zhanxin.info/themes.html
+    message: Friends
+  - item:
+    - text: Font Awesome
+      url: http://fortawesome.github.io/Font-Awesome/
+    - text: Google Font
+      url: http://www.google.com/fonts/
+    - text: jQuery
+      url: http://jquery.com/
+    message: 其他相关链接
+
+#googleAnaly, your id link UA-12345678-X
+googleAnaly:
+  config: true
+  id: UA-40169250-1
+
+#comment config
+disqus:
+  config: false
+  id: piznblog
+
+duoshuo:
+  config: true
+  id: zhanxin

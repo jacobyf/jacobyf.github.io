@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://jacobyf.net/</loc>
+<lastmod>2014-03-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>
+http://jacobyf.net/coding/skills/2014/03/07/set-windows-enironment-command.html
+</loc>
+<lastmod>2014-03-06</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>
+http://jacobyf.net/coding/gis/2014/03/21/ogr2ogr-convert-shapefile-2-geojson.html
+</loc>
+<lastmod>2014-03-21</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+</urlset>
